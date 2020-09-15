@@ -1,11 +1,11 @@
 // Utils
-@import 'utils/u-flex';
+@import 'utils/*.scss';
 
 // Layout
-@import 'layout/l-footer';
+@import 'layout/*.scss';
 
 // Block
-@import 'block/site-footer';
+@import 'block/*.scss';
 
 // Section
 @import 'section/*.scss';

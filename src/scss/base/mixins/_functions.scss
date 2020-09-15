@@ -8,6 +8,7 @@
 
 // возвращает line-height в относительной величине
 // line-height: lh(14, 19.2);
+
 @function lh($fz, $lh) {
   @return $lh / $fz;
 }

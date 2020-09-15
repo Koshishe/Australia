@@ -1,5 +1,7 @@
-//@include font-face('Arial', '../../fonts/Arial/Arial', 400, italic);
-//@include font-face('Arial', '../../fonts/Arial/Arial-Bold', bold);
+@include font-face('PTSans', '../../fonts/PTSans-Regular', 400);
+@include font-face('PTSans', '../../fonts/PTSans-Bold', bold);
+@include font-face('PTSans', '../../fonts/PTSans-BoldItalic', bold, italic);
+@include font-face('PTSans', '../../fonts/PTSans-Italic', italic);
 
 // 100  Thin (Hairline)
 // 200  Extra Light (Ultra Light)
