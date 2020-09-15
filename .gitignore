@@ -1,0 +1,21 @@
+# Dependencies
+node_modules
+
+# Cache files and folders
+cache
+.stylelintcache
+
+# Dist folders
+dist
+
+# VSCode
+.vscode
+
+# Intellij idea
+*.iml
+.idea
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
