@@ -1,0 +1,44 @@
+$b: '.s-reasons';
+
+#{$b} {
+  padding-top: rem(80px);
+
+  &__title {
+    font-size: rem(40px);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__blocks {
+    margin-top: rem(47px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__block {
+    @include bg-cover();
+    flex: 0 0 auto;
+    position: relative;
+    width: rem(370px);
+    height: rem(252px);
+    margin-bottom: rem(55px);
+
+    &:not(:nth-child(3n)) {
+      margin-right: rem(30px);
+    }
+
+    &-name {
+      position: absolute;
+      left: 0;
+      bottom: rem(-23px);
+      padding: rem(12px) 0;
+      width: rem(300px);
+      font-size: rem(20px);
+      text-align: center;
+      color: $white-true;
+      background-color: $accent-base;
+      transition: $g-transition;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 $b: '.site-header';
 
 #{$b} {
-  //
+  position: absolute;
+  top: rem(45px);
+  width: 100%;
 }
