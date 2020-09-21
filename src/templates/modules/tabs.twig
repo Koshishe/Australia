@@ -1,0 +1,17 @@
+{% includeData 'tabs.json' %}
+
+<div class="tabs">
+    <div class="tabs__block-tab">
+        {% for tab in tabs %}
+            <div class="tabs__item js-tab">
+                <div class="tabs__item-day">{{ tab.day }}</div>
+                <div class="tabs__item-info">{{ tab.info }}</div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="tabs__block-content">
+        {% for tab in tabs %}
+            <div class="tabs__block-text js-tab-text" data-content-id="{{ tab.id }}">{{ tab.text }}</div>
+        {% endfor %}
+    </div>
+</div>

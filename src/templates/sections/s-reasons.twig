@@ -1,25 +1,16 @@
+{% includeData 'reasons.json' %}
+
 <section class="s-reasons">
     <div class="s-reasons__content l-outer-width l-inner-padding">
         <h2 class="s-reasons__title">6 причин посетить Австралию</h2>
         <div class="s-reasons__blocks">
-            <div class="s-reasons__block" style="background-image: url(/img/reasons/1.png)">
-                <div class="s-reasons__block-name">Культура аборигенов</div>
+            {% for reason in reasons %}
+            <div class="js-lazy-bg s-reasons__block" data-background-image="{{ reason.img }}">
+                <div class="s-reasons__block-name">
+                    <div class="s-reasons__block-name-content">{{ reason.name }}</div>
+                </div>
             </div>
-            <div class="s-reasons__block" style="background-image: url(/img/reasons/2.png)">
-                <div class="s-reasons__block-name">Национальные парки</div>
-            </div>
-            <div class="s-reasons__block" style="background-image: url(/img/reasons/3.png)">
-                <div class="s-reasons__block-name">Города австралии</div>
-            </div>
-            <div class="s-reasons__block" style="background-image: url(/img/reasons/4.png)">
-                <div class="s-reasons__block-name">Пляжи и дайвинг</div>
-            </div>
-            <div class="s-reasons__block" style="background-image: url(/img/reasons/5.png)">
-                <div class="s-reasons__block-name">Эндемичная фауна</div>
-            </div>
-            <div class="s-reasons__block" style="background-image: url(/img/reasons/6.png)">
-                <div class="s-reasons__block-name">Вино и кулинария</div>
-            </div>
+            {%  endfor %}
         </div>
     </div>
 </section>

@@ -1,0 +1,29 @@
+{
+  "reasons": [
+    {
+      "name": "Культура аборигенов",
+      "img": "/img/reasons/1.png"
+    },
+    {
+      "name": "Национальные парки",
+      "img": "/img/reasons/2.png"
+    },
+    {
+      "name": "Города австралии",
+      "img": "/img/reasons/3.png"
+    },
+    {
+      "name": "Пляжи и дайвинг",
+      "img": "/img/reasons/4.png"
+    },
+    {
+      "name": "Эндемичная фауна",
+      "img": "/img/reasons/5.png"
+    },
+    {
+      "name": "Вино и кулинария",
+      "img": "/img/reasons/6.png"
+    }
+
+  ]
+}

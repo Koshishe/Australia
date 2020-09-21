@@ -32,13 +32,21 @@ $b: '.s-reasons';
       position: absolute;
       left: 0;
       bottom: rem(-23px);
-      padding: rem(12px) 0;
       width: rem(300px);
       font-size: rem(20px);
       text-align: center;
       color: $white-true;
-      background-color: $accent-base;
+      padding: rem(12px) 0;
       transition: $g-transition;
+      background-color: $accent-base;
+      box-shadow: 0 0 0 0 $blue-dark;
+    }
+
+    &:hover {
+      #{$b}__block-name {
+        transform: translate(rem(10px), rem(-10px));
+        box-shadow: rem(-10px) rem(10px) 0 0 $blue-dark;
+      }
     }
   }
 }

@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const glob = require('glob');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -120,9 +121,15 @@ module.exports = {
     alias: {
       '~': PATHS.src,
       vue$: 'vue/dist/vue.esm.js',
+      jquery$: 'jquery/dist/jquery',
     },
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+    }),
     new CleanWebpackPlugin(),
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({

@@ -2,7 +2,6 @@ $b: '.button';
 
 #{$b} {
   @include clickable();
-  position: relative;
   display: inline-block;
   vertical-align: top;
   height: rem(54px);
@@ -16,35 +15,12 @@ $b: '.button';
   border: none;
   touch-action: manipulation;
   transition: $g-transition;
-  transform: translate(rem(5px), rem(-5px));
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    transition: $g-transition;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-
-  &::before {
-    background-color: $orange-dark;
-  }
-
-  &::after {
-    background-color: $action-base;
-  }
+  background-color: $action-base;
+  box-shadow: 0 0 0 0 $orange-dark;
 
   &:hover {
-    position: relative;
     transform: translate(rem(10px), rem(-10px));
-
-    &::before {
-      transform: translate(rem(-10px), rem(10px));
-    }
+    box-shadow: rem(-10px) rem(10px) 0 0 $orange-dark;
   }
 
   &:disabled,
