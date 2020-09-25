@@ -3,6 +3,12 @@ $b: '.g';
 html {
   font-size: #{$root-font-size}px;
 
+  * {
+    &::selection {
+      background-color: rgba($action-base, 0.7);
+    }
+  }
+
   @include low-desktop-min {
     $min-screen-width: 1024;
     $mid-screen-width: 1920;

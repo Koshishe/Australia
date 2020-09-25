@@ -1,0 +1,11 @@
+$b: '.report-slider';
+
+#{$b} {
+  &__wrapper {
+    display: flex;
+  }
+
+  &__slide {
+    width: 100%;
+  }
+}
