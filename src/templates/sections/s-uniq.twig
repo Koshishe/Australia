@@ -1,0 +1,19 @@
+{% includeData 'uniq.json' %}
+
+<section class="s-uniq">
+    <div class="s-uniq__container l-outer-width l-inner-padding">
+        <h2 class="s-uniq__title">Мы уникальны</h2>
+        <h3 class="s-uniq__subtitle">Преимущества путешествий с нашей командой</h3>
+        <div class="s-uniq__list">
+            {% for item in uniq %}
+            <div class="s-uniq__item">
+                <div class="s-uniq__item-content">
+                    <div class="s-uniq__item-bg js-lazy-bg" data-background-image="{{ item.img }}"></div>
+                    <div class="s-uniq__item-title">{{ item.title }}</div>
+                    <div class="s-uniq__item-text">{{ item.text }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

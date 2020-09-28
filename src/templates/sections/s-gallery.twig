@@ -1,0 +1,23 @@
+{% includeData 'gallery.json' %}
+
+<section class="s-gallery">
+    <div class="s-gallery__container l-outer-width l-inner-padding">
+        <h2 class="s-gallery__title">Фото из поездок</h2>
+        <div class="gallery-slider gallery-top">
+            <div class="gallery-slider__wrapper">
+                {%  for item in gallery %}
+                <div class="gallery-slider__item-bg js-lazy-bg" data-background-image="{{ item.img }}"></div>
+                {% endfor %}
+            </div>
+            <div class="gallery-slider__next"></div>
+            <div class="gallery-slider__prev"></div>
+        </div>
+        <div class="gallery-slider gallery-thumbs">
+            <div class="gallery-slider__wrapper">
+                {%  for item in gallery %}
+                    <div class="gallery-slider__item-thumb js-lazy-bg" data-background-image="{{ item.img }}"></div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

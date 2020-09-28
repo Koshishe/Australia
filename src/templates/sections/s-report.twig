@@ -1,15 +1,14 @@
 <section class="s-report">
     <div class="s-report l-outer-width l-inner-padding">
-        <div class="report-slider js-report-slider">
-            <div class="report-slider__slider swiper-container js-slider">
-                <div class="report-slider__wrapper swiper-wrapper">
-                    <div class="report-slider__slide swiper-slide">Slide 1</div>
-                    <div class="report-slider__slide swiper-slide">Slide 2</div>
-                    <div class="report-slider__slide swiper-slide">Slide 3</div>
-                    <div class="report-slider__slide swiper-slide">Slide 4</div>
+        <h2 class="s-report__title">Отчеты о предыдущих путешествиях</h2>
+        <h3 class="s-report__subtitle">Посмотрите лучшие моменты со всех наших путешествий</h3>
+        <div class="s-report__slider js-report-slider">
+            <div class="s-report__slider-container swiper-container js-slider">
+                <div class="s-report__slider-wrapper swiper-wrapper">
+                    {% include "modules/report-slide.twig" %}
                 </div>
+                <div class="s-report__pagination swiper-pagination js-slider-pagination"></div>
             </div>
-            <div class="report-slider__pagination slider-pagination js-slider-pagination"></div>
         </div>
     </div>
 </section>

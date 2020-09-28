@@ -7,6 +7,7 @@ import cssVars from './modules/cssVars';
 import lazyload from './modules/lazyload';
 import tabs from './modules/tabs';
 import report from './modules/reportSlider';
+import gallery from './modules/gallerySlider';
 
 documentReady(() => {
   resize.init();
@@ -14,6 +15,7 @@ documentReady(() => {
   lazyload.init();
   tabs.init();
   report.init();
+  gallery.init();
 });
 
 documentLoaded(() => {

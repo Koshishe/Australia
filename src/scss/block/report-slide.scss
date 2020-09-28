@@ -1,0 +1,65 @@
+$b: '.report-slide';
+
+#{$b} {
+  opacity: 0.5;
+  z-index: 1;
+  transition: $g-transition;
+
+  &__container {
+    border-radius: rem(4px);
+    background-color: $bg-alt;
+    pointer-events: none;
+  }
+
+  &__content {
+    padding: rem(25px) rem(35px);
+  }
+
+  &__bg {
+    @include bg-cover();
+    height: rem(144px);
+    width: 100%;
+  }
+
+  &__title {
+    font-size: rem(15px);
+  }
+
+  &__about {
+    font-size: rem(10px);
+    color: $gray-text;
+    margin-top: rem(5px);
+  }
+
+  &__text {
+    font-size: rem(10px);
+    margin-top: rem(5px);
+  }
+
+  &.swiper-slide-active {
+    transform: scale(2);
+    opacity: 1;
+    z-index: 2;
+
+    #{$b}__container {
+      box-shadow: 0 0 rem(20px) rem(10px) rgba($black-true, 0.1);
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  border: 2px solid $border-base;
+  width: rem(19px);
+  height: rem(19px);
+  border-radius: 50%;
+  transition: $g-transition;
+
+  &:not(:last-child) {
+    margin-right: rem(10px);
+  }
+
+  &-active {
+    border-color: $action-base;
+    background-color: $action-base;
+  }
+}

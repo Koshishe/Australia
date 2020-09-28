@@ -1,5 +1,41 @@
 $b: '.s-report';
 
 #{$b} {
-  //
+  margin-bottom: rem(80px);
+
+  &__slider {
+    overflow: hidden;
+
+    &-wrapper {
+      display: flex;
+      padding: rem(200px) 0;
+    }
+
+    &-container {
+      position: relative;
+    }
+  }
+
+  &__title {
+    margin-top: rem(60px);
+    text-align: center;
+    font-size: rem(40px);
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: rem(26px);
+    margin-top: rem(15px);
+  }
+
+  &__pagination {
+    position: absolute;
+    bottom: rem(10px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

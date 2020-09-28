@@ -1,0 +1,14 @@
+{% includeData 'reports.json' %}
+
+{% for slide in reports %}
+<div class="report-slide swiper-slide">
+    <div class="report-slide__container">
+        <div class="js-lazy-bg report-slide__bg" data-background-image="{{ slide.img }}"></div>
+        <div class="report-slide__content">
+            <div class="report-slide__title">{{ slide.title }}</div>
+            <div class="report-slide__about">{{ slide.subtitle }}</div>
+            <div class="report-slide__text">{{ slide.text }}</div>
+        </div>
+    </div>
+</div>
+{% endfor %}

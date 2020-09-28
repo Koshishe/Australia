@@ -1,0 +1,57 @@
+$b: '.gallery-slider';
+
+#{$b} {
+  margin-top: rem(40px);
+  margin-bottom: rem(30px);
+  overflow: hidden;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__item {
+    &-bg {
+      @include aspect-ratio(1170, 556);
+      @include bg-cover();
+      flex: 0 0 auto;
+      width: 100%;
+    }
+
+    &-thumb {
+      @include aspect-ratio(270, 140);
+      @include bg-cover();
+      flex: 0 0 auto;
+      width: rem(270px);
+    }
+  }
+
+  &__next,
+  &__prev {
+    @include clickable();
+    @include aspect-ratio(21, 32);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../img/icons/arrow.png);
+    width: rem(21px);
+    transition: $g-transition;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &.swiper-button-disabled {
+      display: none;
+    }
+  }
+
+  &__next {
+    right: rem(40px);
+  }
+
+  &__prev {
+    left: rem(40px);
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
