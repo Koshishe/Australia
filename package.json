@@ -76,7 +76,9 @@
     "jquery": "^3.5.1",
     "lozad": "^1.15.0",
     "normalize.css": "^8.0.1",
+    "scriptjs": "^2.5.9",
     "swiper": "^6.3.0",
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "youtube-api": "^3.0.1"
   }
 }

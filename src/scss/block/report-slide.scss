@@ -5,6 +5,12 @@ $b: '.report-slide';
   z-index: 1;
   transition: $g-transition;
 
+  @include tablet {
+    opacity: 1;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
   &__container {
     border-radius: rem(4px);
     background-color: $bg-alt;
@@ -18,27 +24,49 @@ $b: '.report-slide';
   &__video {
     height: rem(144px);
     width: 100%;
+
+    @include tablet {
+      height: rem(300px);
+    }
   }
 
   &__title {
     font-size: rem(15px);
+
+    @include tablet {
+      font-size: rem(20px);
+    }
   }
 
   &__about {
     font-size: rem(10px);
     color: $gray-text;
     margin-top: rem(5px);
+
+    @include tablet {
+      font-size: rem(16px);
+      margin-top: rem(10px);
+    }
   }
 
   &__text {
     font-size: rem(10px);
     margin-top: rem(5px);
+
+    @include tablet {
+      font-size: rem(16px);
+      margin-top: rem(10px);
+    }
   }
 
   &.swiper-slide-active {
     transform: scale(2);
     opacity: 1;
     z-index: 2;
+
+    @include tablet {
+      transform: none;
+    }
 
     #{$b}__container {
       box-shadow: 0 0 rem(20px) rem(10px) rgba($black-true, 0.1);
@@ -52,6 +80,11 @@ $b: '.report-slide';
   height: rem(19px);
   border-radius: 50%;
   transition: $g-transition;
+
+  @include tablet {
+    width: rem(15px);
+    height: rem(15px);
+  }
 
   &:not(:last-child) {
     margin-right: rem(10px);

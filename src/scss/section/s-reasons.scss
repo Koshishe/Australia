@@ -3,6 +3,10 @@ $b: '.s-reasons';
 #{$b} {
   padding-top: rem(80px);
 
+  @include tablet {
+    padding-top: rem(40px);
+  }
+
   &__title {
     font-size: rem(40px);
     font-weight: bold;
@@ -26,6 +30,19 @@ $b: '.s-reasons';
 
     &:not(:nth-child(3n)) {
       margin-right: rem(30px);
+
+      @include tablet {
+        margin-right: 0;
+      }
+    }
+
+    @include tablet {
+      flex: 0 1 auto;
+      width: 47%;
+
+      &:nth-child(2n - 1) {
+        margin-right: 5%;
+      }
     }
 
     &-name {

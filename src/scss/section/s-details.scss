@@ -1,9 +1,10 @@
 $b: '.s-details';
 
 #{$b} {
-  &__container {
-    padding-top: rem(80px);
-    padding-bottom: rem(80px);
+  padding: rem(80px) 0;
+
+  @include tablet {
+    padding: rem(40px) 0;
   }
 
   &__title {
@@ -11,11 +12,19 @@ $b: '.s-details';
     font-size: rem(40px);
     font-weight: bold;
     margin-bottom: rem(40px);
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
   }
 
   &__table {
     display: flex;
     justify-content: center;
+
+    @include tablet {
+      display: block;
+    }
 
     &-row {
       flex: 0 1 auto;
@@ -27,6 +36,16 @@ $b: '.s-details';
         padding: rem(44px) rem(50px) rem(38px) rem(54px);
         margin-right: rem(30px);
         border-color: $action-base;
+
+        @include tablet {
+          margin-right: 0;
+          padding: rem(30px);
+        }
+      }
+
+      @include tablet {
+        width: 100%;
+        padding: rem(30px);
       }
     }
 
@@ -34,6 +53,10 @@ $b: '.s-details';
       margin-bottom: rem(35px);
       font-size: rem(30px);
       font-weight: bold;
+
+      @include tablet {
+        text-align: center;
+      }
     }
 
     &-item {

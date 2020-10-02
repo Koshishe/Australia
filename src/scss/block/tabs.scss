@@ -4,10 +4,19 @@ $b: '.tabs';
   margin-top: rem(30px);
   display: flex;
 
+  @include tablet {
+    flex-direction: column;
+  }
+
   &__block {
     &-tab {
       flex: 0 0 auto;
       width: rem(300px);
+
+      @include tablet {
+        display: flex;
+        width: 100%;
+      }
     }
 
     &-content {
@@ -15,6 +24,10 @@ $b: '.tabs';
       width: calc(100% - 3rem);
       background-color: $white-true;
       padding: rem(35px);
+
+      @include tablet {
+        width: 100%;
+      }
     }
 
     &-text {
@@ -48,6 +61,15 @@ $b: '.tabs';
     transition: $g-transition;
     box-shadow: 0 0 0 0 $gray-dark;
 
+    @include tablet {
+      flex: 1 0 auto;
+      text-align: center;
+
+      &:not(:last-child) {
+        border-right: 1px solid $border-base;
+      }
+    }
+
     &-day {
       font-size: rem(20px);
       line-height: 1;
@@ -56,6 +78,10 @@ $b: '.tabs';
     &-info {
       margin-top: rem(8px);
       font-size: rem(14px);
+
+      @include tablet {
+        display: none;
+      }
     }
 
     &:hover {

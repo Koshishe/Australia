@@ -3,16 +3,28 @@ $b: '.s-report';
 #{$b} {
   margin-bottom: rem(80px);
 
+  @include tablet {
+    margin-bottom: rem(40px);
+  }
+
   &__slider {
     overflow: hidden;
 
     &-wrapper {
       display: flex;
       padding: rem(200px) 0;
+
+      @include tablet {
+        padding: rem(40px) 0;
+      }
     }
 
     &-container {
       position: relative;
+    }
+
+    @include tablet {
+      overflow: visible;
     }
   }
 
@@ -37,5 +49,9 @@ $b: '.s-report';
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablet {
+      bottom: 0;
+    }
   }
 }

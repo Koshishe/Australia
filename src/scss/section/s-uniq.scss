@@ -4,6 +4,10 @@ $b: '.s-uniq';
   background-color: $bg-alt;
   padding: rem(85px) 0 rem(60px);
 
+  @include tablet {
+    padding: rem(40px) 0;
+  }
+
   &__title {
     text-align: center;
     font-size: rem(40px);
@@ -30,6 +34,14 @@ $b: '.s-uniq';
     padding-top: rem(40px);
     margin-bottom: rem(30px);
 
+    @include tablet {
+      width: 47%;
+
+      &:nth-child(2n - 1) {
+        margin-right: 5%;
+      }
+    }
+
     &:hover {
       #{$b}__item-bg {
         transform: translateY(rem(-40px));
@@ -43,6 +55,10 @@ $b: '.s-uniq';
 
     &:nth-child(3n-1) {
       margin: 0 rem(30px);
+
+      @include tablet {
+        margin: 0;
+      }
     }
 
     &-content {
@@ -50,6 +66,10 @@ $b: '.s-uniq';
       box-shadow: rem(5px) rem(5px) rem(20px) rem(5px) rgba($black-true, 0.1);
       position: relative;
       height: rem(320px);
+
+      @include tablet {
+        height: rem(300px);
+      }
     }
 
     &-bg {

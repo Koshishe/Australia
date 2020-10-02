@@ -15,6 +15,10 @@ $b: '.s-escort';
     height: rem(363px);
     background-color: $bg-alt;
     z-index: -1;
+
+    @include tablet {
+      height: rem(220px);
+    }
   }
 
   &__container {
@@ -28,17 +32,29 @@ $b: '.s-escort';
       font-size: rem(40px);
       font-weight: bold;
       margin-bottom: rem(20px);
+
+      @include tablet {
+        font-size: rem(32px);
+      }
     }
 
     &-subtitle {
       font-size: rem(30px);
       font-weight: bold;
       margin-bottom: rem(20px);
+
+      @include tablet {
+        font-size: rem(24px);
+      }
     }
 
     &-text {
       font-size: rem(20px);
       margin-bottom: rem(20px);
+
+      @include tablet {
+        font-size: rem(18px);
+      }
     }
   }
 
@@ -48,6 +64,12 @@ $b: '.s-escort';
     height: rem(500px);
     padding: rem(30px) rem(30px) 0 0;
 
+    @include tablet {
+      width: rem(300px);
+      height: rem(300px);
+      padding: rem(20px) rem(20px) 0 0;
+    }
+
     &-bg {
       @include bg-cover();
       width: 100%;
@@ -55,9 +77,18 @@ $b: '.s-escort';
       box-shadow: rem(30px) rem(-30px) 0 0 $action-base;
       transition: $g-transition;
 
+      @include tablet {
+        box-shadow: rem(20px) rem(-20px) 0 0 $action-base;
+      }
+
       &:hover {
         transform: translate(-10px, 10px);
         box-shadow: rem(50px) rem(-50px) 0 0 $action-base;
+
+        @include tablet {
+          transform: translate(-5px, 5px);
+          box-shadow: rem(30px) rem(-30px) 0 0 $action-base;
+        }
       }
     }
   }

@@ -3,6 +3,10 @@ $b: '.s-description';
 #{$b} {
   &__container {
     padding-bottom: rem(110px);
+
+    @include tablet {
+      padding-bottom: rem(40px);
+    }
   }
 
   &__title {
@@ -14,6 +18,10 @@ $b: '.s-description';
     margin-top: rem(30px);
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column-reverse;
+    }
   }
 
   &__text {
@@ -21,6 +29,10 @@ $b: '.s-description';
     width: 50%;
     font-size: rem(20px);
     line-height: rem(30px);
+
+    @include tablet {
+      width: 100%;
+    }
 
     &-note {
       margin-top: rem(20px);
@@ -36,6 +48,12 @@ $b: '.s-description';
     width: calc(50% - 0.3rem);
     margin-right: rem(15px);
     padding: 0 rem(15px) rem(25px) 0;
+
+    @include tablet {
+      width: 100%;
+      height: rem(400px);
+      margin-bottom: rem(40px);
+    }
 
     &-bg {
       @include bg-cover();

@@ -4,7 +4,7 @@ $b: '.s-hero';
   height: rem(700px);
 
   @include tablet {
-    height: rem(500px);
+    height: rem(450px);
   }
 
   &__container {
@@ -32,7 +32,8 @@ $b: '.s-hero';
     text-transform: uppercase;
 
     @include tablet {
-      font-size: rem(20px);
+      font-size: rem(18px);
+      margin-top: rem(10px);
     }
   }
 
@@ -40,6 +41,10 @@ $b: '.s-hero';
     font-size: rem(25px);
     color: $white-true;
     margin-top: rem(35px);
+
+    @include tablet {
+      font-size: rem(16px);
+    }
   }
 
   &__btn {

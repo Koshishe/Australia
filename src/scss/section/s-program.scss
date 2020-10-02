@@ -2,8 +2,11 @@ $b: '.s-program';
 
 #{$b} {
   background-color: $bg-alt;
-  padding-top: rem(80px);
-  padding-bottom: rem(80px);
+  padding: rem(80px) 0;
+
+  @include tablet {
+    padding: rem(40px) 0;
+  }
 
   &__title {
     text-align: center;

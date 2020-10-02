@@ -8,4 +8,8 @@ $b: '.l-outer-width';
   @include low-desktop {
     max-width: 768px;
   }
+
+  @include tablet {
+    max-width: 100%;
+  }
 }
