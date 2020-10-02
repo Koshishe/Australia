@@ -9,7 +9,7 @@ const packageJSON = require('./package');
 
 const PATHS = {
   src: path.join(__dirname, './src'),
-  dist: path.join(__dirname, './dist'),
+  dist: path.join(__dirname, './docs'),
   cache: path.join(__dirname, './cache'),
 };
 
@@ -120,8 +120,8 @@ module.exports = {
   resolve: {
     alias: {
       '~': PATHS.src,
-      vue$: 'vue/dist/vue.esm.js',
-      jquery$: 'jquery/dist/jquery',
+      vue$: 'vue/docs/vue.esm.js',
+      jquery$: 'jquery/docs/jquery',
     },
   },
   plugins: [

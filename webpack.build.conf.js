@@ -37,6 +37,9 @@ const buildWebpackConfig = merge(baseWebpackConfig, {
       },
     ],
   },
+  externals: {
+    "jquery": "jQuery"
+  },
   plugins: [
     new ImageminPlugin({
       test: /\.png|jp(e)?g|gif|svg$/i,

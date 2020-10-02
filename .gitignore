@@ -6,7 +6,7 @@ cache
 .stylelintcache
 
 # Dist folders
-dist
+# docs //safe for github
 
 # VSCode
 .vscode
