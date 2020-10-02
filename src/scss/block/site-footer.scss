@@ -8,6 +8,18 @@ $b: '.site-footer';
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablet {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    @include tablet {
+      display: block;
+      margin-bottom: rem(20px);
+    }
   }
 
   &__contacts {
@@ -26,6 +38,11 @@ $b: '.site-footer';
     display: flex;
     align-items: center;
     height: rem(23px);
+
+    @include tablet {
+      justify-content: center;
+      margin-top: rem(30px);
+    }
 
     img {
       max-height: 100%;

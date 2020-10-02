@@ -12,12 +12,5 @@
             <div class="gallery-slider__next"></div>
             <div class="gallery-slider__prev"></div>
         </div>
-        <div class="gallery-slider gallery-thumbs">
-            <div class="gallery-slider__wrapper">
-                {%  for item in gallery %}
-                    <div class="gallery-slider__item-thumb js-lazy-bg" data-background-image="{{ item.img }}"></div>
-                {% endfor %}
-            </div>
-        </div>
     </div>
 </section>

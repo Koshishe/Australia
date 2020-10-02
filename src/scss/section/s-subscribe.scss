@@ -3,31 +3,57 @@ $b: '.s-subscribe';
 #{$b} {
   background-color: $action-base;
   position: relative;
-  padding: rem(77px) 0;
+  padding: rem(80px) 0 rem(90px);
+
+  @include tablet {
+    padding: rem(40px) 0 rem(80px);
+  }
 
   &__form {
     max-width: rem(800px);
     background-color: $white-true;
-    padding: rem(75px) rem(75px) rem(80px);
+    padding: rem(80px);
+
+    @include tablet {
+      padding: rem(20px);
+      max-width: rem(500px);
+      margin: 0 auto;
+    }
 
     &-title {
       font-size: rem(48px);
       font-weight: bold;
       text-align: center;
+
+      @include tablet {
+        font-size: rem(36px);
+      }
     }
 
     &-subtitle {
       margin-top: rem(13px);
       text-align: center;
       font-size: rem(24px);
+
+      @include tablet {
+        font-size: rem(18px);
+      }
     }
 
     &-field {
       margin-top: rem(40px);
       position: relative;
 
+      @include tablet {
+        margin-top: rem(20px);
+      }
+
       &:nth-child(2) {
         margin-top: rem(70px);
+
+        @include tablet {
+          margin-top: rem(30px);
+        }
       }
     }
 
@@ -40,9 +66,17 @@ $b: '.s-subscribe';
       transition: $g-transition;
       transform-origin: top left;
 
+      @include tablet {
+        font-size: rem(18px);
+      }
+
       &._focused {
         transform: translateY(rem(-25px)) scale(0.8);
         opacity: 0.5;
+
+        @include tablet {
+          transform: translateY(rem(-20px)) scale(0.8);
+        }
       }
     }
 
@@ -52,16 +86,28 @@ $b: '.s-subscribe';
       padding: rem(10px);
       font-size: rem(24px);
 
+      @include tablet {
+        font-size: rem(18px);
+      }
+
       &:focus {
         ~ #{$b}__form-label {
           transform: translateY(rem(-25px)) scale(0.8);
           opacity: 0.5;
+
+          @include tablet {
+            transform: translateY(rem(-20px)) scale(0.8);
+          }
         }
       }
     }
 
     &-btn {
       margin-top: rem(70px);
+
+      @include tablet {
+        margin-top: rem(30px);
+      }
     }
   }
 
@@ -73,5 +119,9 @@ $b: '.s-subscribe';
     bottom: 0;
     background-image: url(../img/footer-bg.png);
     width: rem(1132px);
+
+    @include tablet {
+      width: rem(500px);
+    }
   }
 }

@@ -34,14 +34,6 @@ $b: '.s-uniq';
     padding-top: rem(40px);
     margin-bottom: rem(30px);
 
-    @include tablet {
-      width: 47%;
-
-      &:nth-child(2n - 1) {
-        margin-right: 5%;
-      }
-    }
-
     &:hover {
       #{$b}__item-bg {
         transform: translateY(rem(-40px));
@@ -58,6 +50,14 @@ $b: '.s-uniq';
 
       @include tablet {
         margin: 0;
+      }
+    }
+
+    @include tablet {
+      width: 47%;
+
+      &:nth-child(2n - 1) {
+        margin-right: 5%;
       }
     }
 
@@ -93,6 +93,10 @@ $b: '.s-uniq';
       transform: translateX(rem(-30px));
       transition: $g-transition;
       box-shadow: 0 0 0 0 $blue-dark;
+
+      @include tablet {
+        top: 45%;
+      }
     }
 
     &-text {
@@ -101,6 +105,11 @@ $b: '.s-uniq';
       transform: translateY(rem(-30px));
       line-height: 1.5;
       transition: $g-transition;
+
+      @include tablet {
+        padding: rem(15px);
+        transform: translateY(rem(-20px));
+      }
     }
   }
 }
