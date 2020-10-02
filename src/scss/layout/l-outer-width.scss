@@ -6,7 +6,7 @@ $b: '.l-outer-width';
   max-width: $outer-w;
 
   @include low-desktop {
-    max-width: 768px;
+    max-width: rem(1440px);
   }
 
   @include tablet {

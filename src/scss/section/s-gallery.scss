@@ -7,9 +7,17 @@ $b: '.s-gallery';
     padding: rem(40px) 0;
   }
 
+  @include mobile {
+    padding: rem(20px) 0 rem(30px);
+  }
+
   &__title {
     font-size: rem(40px);
     font-weight: bold;
     text-align: center;
+
+    @include mobile {
+      font-size: rem(32px);
+    }
   }
 }

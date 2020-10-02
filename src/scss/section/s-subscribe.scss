@@ -9,6 +9,10 @@ $b: '.s-subscribe';
     padding: rem(40px) 0 rem(80px);
   }
 
+  @include mobile {
+    padding: rem(20px) 0 rem(120px);
+  }
+
   &__form {
     max-width: rem(800px);
     background-color: $white-true;
@@ -28,6 +32,11 @@ $b: '.s-subscribe';
       @include tablet {
         font-size: rem(36px);
       }
+
+      @include mobile {
+        font-size: rem(32px);
+        line-height: 1.2;
+      }
     }
 
     &-subtitle {
@@ -37,6 +46,10 @@ $b: '.s-subscribe';
 
       @include tablet {
         font-size: rem(18px);
+      }
+
+      @include mobile {
+        font-size: rem(16px);
       }
     }
 
@@ -70,6 +83,10 @@ $b: '.s-subscribe';
         font-size: rem(18px);
       }
 
+      @include mobile {
+        font-size: rem(16px);
+      }
+
       &._focused {
         transform: translateY(rem(-25px)) scale(0.8);
         opacity: 0.5;
@@ -88,6 +105,10 @@ $b: '.s-subscribe';
 
       @include tablet {
         font-size: rem(18px);
+      }
+
+      @include mobile {
+        font-size: rem(16px);
       }
 
       &:focus {
@@ -122,6 +143,10 @@ $b: '.s-subscribe';
 
     @include tablet {
       width: rem(500px);
+    }
+
+    @include mobile {
+      width: 100%;
     }
   }
 }

@@ -4,4 +4,8 @@ $b: '.site-header';
   position: absolute;
   top: rem(45px);
   width: 100%;
+
+  @include mobile {
+    top: rem(30px);
+  }
 }

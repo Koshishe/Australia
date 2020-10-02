@@ -7,6 +7,10 @@ $b: '.s-hero';
     height: rem(450px);
   }
 
+  @include mobile {
+    height: rem(390px);
+  }
+
   &__container {
     @include bg-cover();
     width: 100%;
@@ -24,6 +28,11 @@ $b: '.s-hero';
       padding-top: rem(120px);
       font-size: rem(40px);
     }
+
+    @include mobile {
+      padding-top: rem(80px);
+      font-size: rem(32px);
+    }
   }
 
   &__subtitle {
@@ -35,6 +44,11 @@ $b: '.s-hero';
       font-size: rem(18px);
       margin-top: rem(10px);
     }
+
+    @include mobile {
+      font-size: rem(16px);
+      max-width: rem(200px);
+    }
   }
 
   &__info {
@@ -45,9 +59,19 @@ $b: '.s-hero';
     @include tablet {
       font-size: rem(16px);
     }
+
+    @include mobile {
+      font-size: rem(14px);
+      margin-top: rem(20px);
+    }
   }
 
   &__btn {
     margin-top: rem(54px);
+
+    @include mobile {
+      display: block;
+      margin: rem(100px) auto 0;
+    }
   }
 }

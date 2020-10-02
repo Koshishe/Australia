@@ -4,6 +4,10 @@ $b: '.site-footer';
   background-color: $bg-alt;
   padding: rem(50px) 0;
 
+  @include mobile {
+    padding: rem(30px);
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -19,6 +23,15 @@ $b: '.site-footer';
     @include tablet {
       display: block;
       margin-bottom: rem(20px);
+    }
+
+    @include mobile {
+      width: rem(140px);
+      margin: 0 auto rem(20px);
+
+      img {
+        max-width: 100%;
+      }
     }
   }
 

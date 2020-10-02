@@ -8,6 +8,10 @@ $b: '.s-program';
     padding: rem(40px) 0;
   }
 
+  @include mobile {
+    padding: rem(20px) 0;
+  }
+
   &__title {
     text-align: center;
     margin-bottom: rem(20px);

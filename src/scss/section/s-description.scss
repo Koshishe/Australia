@@ -12,6 +12,11 @@ $b: '.s-description';
   &__title {
     margin-top: rem(45px);
     text-align: center;
+
+    @include mobile {
+      font-size: rem(32px);
+      margin-top: rem(20px);
+    }
   }
 
   &__info {
@@ -34,8 +39,17 @@ $b: '.s-description';
       width: 100%;
     }
 
+    @include mobile {
+      font-size: rem(18px);
+      line-height: rem(28px);
+    }
+
     &-note {
       margin-top: rem(20px);
+
+      @include mobile {
+        margin-top: rem(15px);
+      }
 
       b {
         display: block;
@@ -53,6 +67,12 @@ $b: '.s-description';
       width: 100%;
       height: rem(400px);
       margin-bottom: rem(40px);
+      margin-right: 0;
+    }
+
+    @include mobile {
+      height: rem(300px);
+      margin-bottom: rem(20px);
     }
 
     &-bg {
@@ -65,6 +85,15 @@ $b: '.s-description';
       &:hover {
         transform: translate(-10px, -10px);
         box-shadow: rem(50px) rem(50px) 0 0 $action-base;
+      }
+
+      @include mobile {
+        box-shadow: rem(15px) rem(15px) 0 0 $action-base;
+
+        &:hover {
+          transform: translate(-5px, -5px);
+          box-shadow: rem(25px) rem(25px) 0 0 $action-base;
+        }
       }
     }
   }

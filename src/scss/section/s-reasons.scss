@@ -7,10 +7,18 @@ $b: '.s-reasons';
     padding-top: rem(40px);
   }
 
+  @include mobile {
+    padding-top: rem(20px);
+  }
+
   &__title {
     font-size: rem(40px);
     font-weight: bold;
     text-align: center;
+
+    @include mobile {
+      font-size: rem(32px);
+    }
   }
 
   &__blocks {
@@ -18,20 +26,26 @@ $b: '.s-reasons';
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include mobile {
+      margin-top: rem(20px);
+    }
   }
 
   &__block {
     @include bg-cover();
     flex: 0 0 auto;
     position: relative;
-    width: rem(370px);
+    width: 30%;
     height: rem(252px);
     margin-bottom: rem(55px);
 
-    &:not(:nth-child(3n)) {
+    &:nth-child(3n - 1) {
+      margin-left: rem(30px);
       margin-right: rem(30px);
 
       @include tablet {
+        margin-left: 0;
         margin-right: 0;
       }
     }
@@ -42,7 +56,15 @@ $b: '.s-reasons';
 
       &:nth-child(2n - 1) {
         margin-right: 5%;
+
+        @include mobile {
+          margin-right: 0;
+        }
       }
+    }
+
+    @include mobile {
+      width: 100%;
     }
 
     &-name {

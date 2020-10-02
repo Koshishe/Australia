@@ -17,6 +17,10 @@ $b: '.tabs';
         display: flex;
         width: 100%;
       }
+
+      @include mobile {
+        overflow: auto;
+      }
     }
 
     &-content {
@@ -73,6 +77,10 @@ $b: '.tabs';
     &-day {
       font-size: rem(20px);
       line-height: 1;
+
+      @include mobile {
+        font-size: rem(18px);
+      }
     }
 
     &-info {

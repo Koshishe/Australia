@@ -5,6 +5,10 @@ $b: '.gallery-slider';
   overflow: hidden;
   position: relative;
 
+  @include mobile {
+    margin-top: rem(15px);
+  }
+
   &__wrapper {
     display: flex;
   }
@@ -36,6 +40,12 @@ $b: '.gallery-slider';
     width: rem(21px);
     transition: $g-transition;
 
+    @include mobile {
+      @include bg-contain();
+      @include aspect-ratio(15, 25);
+      width: rem(15px);
+    }
+
     &:hover {
       opacity: 0.7;
     }
@@ -47,10 +57,18 @@ $b: '.gallery-slider';
 
   &__next {
     right: rem(40px);
+
+    @include mobile {
+      right: rem(10px);
+    }
   }
 
   &__prev {
     left: rem(40px);
     transform: translateY(-50%) rotate(180deg);
+
+    @include mobile {
+      left: rem(10px);
+    }
   }
 }

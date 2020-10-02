@@ -19,12 +19,21 @@ $b: '.s-escort';
     @include tablet {
       height: rem(220px);
     }
+
+    @include mobile {
+      height: rem(300px);
+      top: 74%;
+    }
   }
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   &__info {
@@ -36,6 +45,10 @@ $b: '.s-escort';
       @include tablet {
         font-size: rem(32px);
       }
+
+      @include mobile {
+        margin-bottom: rem(10px);
+      }
     }
 
     &-subtitle {
@@ -45,6 +58,10 @@ $b: '.s-escort';
 
       @include tablet {
         font-size: rem(24px);
+      }
+
+      @include mobile {
+        margin-bottom: rem(10px);
       }
     }
 
@@ -68,6 +85,11 @@ $b: '.s-escort';
       width: rem(300px);
       height: rem(300px);
       padding: rem(20px) rem(20px) 0 0;
+    }
+
+    @include mobile {
+      width: 100%;
+      margin-bottom: rem(20px);
     }
 
     &-bg {

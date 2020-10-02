@@ -18,6 +18,12 @@ $b: '.button';
   background-color: $action-base;
   box-shadow: 0 0 0 0 $orange-dark;
 
+  @include mobile {
+    font-size: rem(16px);
+    height: rem(40px);
+    line-height: rem(40px);
+  }
+
   &:hover {
     transform: translate(rem(10px), rem(-10px));
     box-shadow: rem(-10px) rem(10px) 0 0 $orange-dark;
