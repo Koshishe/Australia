@@ -8,6 +8,7 @@ import lazyload from './modules/lazyload';
 import tabs from './modules/tabs';
 import report from './modules/reportSlider';
 import gallery from './modules/gallerySlider';
+import label from './modules/label';
 
 documentReady(() => {
   resize.init();
@@ -16,6 +17,7 @@ documentReady(() => {
   tabs.init();
   report.init();
   gallery.init();
+  label.init();
 });
 
 documentLoaded(() => {

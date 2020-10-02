@@ -1,5 +1,43 @@
 $b: '.site-footer';
 
 #{$b} {
-  //
+  background-color: $bg-alt;
+  padding: rem(50px) 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contacts {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: rem(20px);
+
+    &:nth-child(2) {
+      margin: rem(10px) 0;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    height: rem(23px);
+
+    img {
+      max-height: 100%;
+    }
+
+    &-icon {
+      flex: 0 0 auto;
+      display: block;
+
+      &:nth-child(2) {
+        margin: 0 rem(10px);
+      }
+    }
+  }
 }

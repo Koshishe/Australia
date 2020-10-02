@@ -67,4 +67,14 @@ $b: '.button';
       background-color: $accent-base;
     }
   }
+
+  &._accent {
+    background-color: $accent-base;
+    color: $white-true;
+    box-shadow: 0 0 0 0 $blue-dark;
+
+    &:hover {
+      box-shadow: rem(-10px) rem(10px) 0 0 $blue-dark;
+    }
+  }
 }

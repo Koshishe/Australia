@@ -15,8 +15,7 @@ $b: '.report-slide';
     padding: rem(25px) rem(35px);
   }
 
-  &__bg {
-    @include bg-cover();
+  &__video {
     height: rem(144px);
     width: 100%;
   }

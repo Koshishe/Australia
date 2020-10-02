@@ -4,4 +4,8 @@ $b: '.l-outer-width';
   margin-left: auto;
   margin-right: auto;
   max-width: $outer-w;
+
+  @include low-desktop {
+    max-width: 768px;
+  }
 }

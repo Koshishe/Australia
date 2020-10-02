@@ -1,0 +1,77 @@
+$b: '.s-subscribe';
+
+#{$b} {
+  background-color: $action-base;
+  position: relative;
+  padding: rem(77px) 0;
+
+  &__form {
+    max-width: rem(800px);
+    background-color: $white-true;
+    padding: rem(75px) rem(75px) rem(80px);
+
+    &-title {
+      font-size: rem(48px);
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &-subtitle {
+      margin-top: rem(13px);
+      text-align: center;
+      font-size: rem(24px);
+    }
+
+    &-field {
+      margin-top: rem(40px);
+      position: relative;
+
+      &:nth-child(2) {
+        margin-top: rem(70px);
+      }
+    }
+
+    &-label {
+      font-size: rem(24px);
+      position: absolute;
+      bottom: rem(8px);
+      left: rem(10px);
+      pointer-events: none;
+      transition: $g-transition;
+      transform-origin: top left;
+
+      &._focused {
+        transform: translateY(rem(-25px)) scale(0.8);
+        opacity: 0.5;
+      }
+    }
+
+    &-input {
+      border-bottom: 1px solid $border-base;
+      width: 100%;
+      padding: rem(10px);
+      font-size: rem(24px);
+
+      &:focus {
+        ~ #{$b}__form-label {
+          transform: translateY(rem(-25px)) scale(0.8);
+          opacity: 0.5;
+        }
+      }
+    }
+
+    &-btn {
+      margin-top: rem(70px);
+    }
+  }
+
+  &__decor {
+    @include aspect-ratio(1132, 871);
+    @include bg-cover();
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/footer-bg.png);
+    width: rem(1132px);
+  }
+}

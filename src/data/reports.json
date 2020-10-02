@@ -4,19 +4,22 @@
       "title" : "Лина Верес",
       "subtitle": "&mdash;&nbsp;о&nbsp;путешествии в&nbsp;Мадагаскар",
       "text": "«Мадагаскар — это неожиданность. Надо ехать и смотреть. Я ехала за впечатлениями, вдохновением и эмоциями. Это и...»",
-      "img": "/img/slider/1.png"
+      "id": "1",
+      "src": "https://www.youtube.com/embed/iBUfOs7byS4"
     },
     {
       "title" : "Лина Верес",
       "subtitle": "&mdash;&nbsp;о&nbsp;путешествии в&nbsp;Мадагаскар",
       "text": "«Мадагаскар — это неожиданность. Надо ехать и смотреть. Я ехала за впечатлениями, вдохновением и эмоциями. Это и...»",
-      "img": "/img/slider/2.png"
+      "id": "2",
+      "src": "https://www.youtube.com/embed/na9eBzLMhTg"
     },
     {
       "title" : "Лина Верес",
       "subtitle": "&mdash;&nbsp;о&nbsp;путешествии в&nbsp;Мадагаскар",
       "text": "«Мадагаскар — это неожиданность. Надо ехать и смотреть. Я ехала за впечатлениями, вдохновением и эмоциями. Это и...»",
-      "img": "/img/slider/3.png"
+      "id": "3",
+      "src": "https://www.youtube.com/embed/PdVLk_dPmtc"
     }
   ]
 }

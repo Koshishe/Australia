@@ -3,6 +3,10 @@ $b: '.s-hero';
 #{$b} {
   height: rem(700px);
 
+  @include tablet {
+    height: rem(500px);
+  }
+
   &__container {
     @include bg-cover();
     width: 100%;
@@ -15,12 +19,21 @@ $b: '.s-hero';
     text-transform: uppercase;
     padding-top: rem(230px);
     color: $white-true;
+
+    @include tablet {
+      padding-top: rem(120px);
+      font-size: rem(40px);
+    }
   }
 
   &__subtitle {
     font-size: rem(25px);
     color: $white-true;
     text-transform: uppercase;
+
+    @include tablet {
+      font-size: rem(20px);
+    }
   }
 
   &__info {
