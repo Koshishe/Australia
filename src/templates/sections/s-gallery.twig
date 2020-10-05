@@ -6,7 +6,7 @@
         <div class="gallery-slider gallery-top">
             <div class="gallery-slider__wrapper">
                 {%  for item in gallery %}
-                <div class="gallery-slider__item-bg js-lazy-bg" data-background-image="{{ item.img }}"></div>
+                <div class="gallery-slider__item-bg" style="background-image: url({{ item.img }})"></div>
                 {% endfor %}
             </div>
             <div class="gallery-slider__next"></div>

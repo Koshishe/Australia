@@ -8,7 +8,7 @@
             {% for item in uniq %}
             <div class="s-uniq__item">
                 <div class="s-uniq__item-content">
-                    <div class="s-uniq__item-bg js-lazy-bg" data-background-image="{{ item.img }}"></div>
+                    <div class="s-uniq__item-bg" style="background-image: url({{ item.img }})"></div>
                     <div class="s-uniq__item-title">{{ item.title }}</div>
                     <div class="s-uniq__item-text">{{ item.text }}</div>
                 </div>

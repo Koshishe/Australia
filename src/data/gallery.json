@@ -1,16 +1,16 @@
 {
   "gallery": [
     {
-      "img": "/img/gallery/1.jpg"
+      "img": "../img/gallery/1.jpg"
     },
     {
-      "img": "/img/gallery/2.jpg"
+      "img": "../img/gallery/2.jpg"
     },
     {
-      "img": "/img/gallery/3.jpg"
+      "img": "../img/gallery/3.jpg"
     },
     {
-      "img": "/img/gallery/5.jpg"
+      "img": "../img/gallery/5.jpg"
     }
   ]
 }

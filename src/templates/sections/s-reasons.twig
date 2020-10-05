@@ -5,7 +5,7 @@
         <h2 class="s-reasons__title">6 причин посетить Австралию</h2>
         <div class="s-reasons__blocks">
             {% for reason in reasons %}
-            <div class="js-lazy-bg s-reasons__block" data-background-image="{{ reason.img }}">
+            <div class="s-reasons__block" style="background-image: url({{ reason.img }})">
                 <div class="s-reasons__block-name">
                     <div class="s-reasons__block-name-content">{{ reason.name }}</div>
                 </div>
