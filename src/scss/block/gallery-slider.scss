@@ -31,6 +31,7 @@ $b: '.gallery-slider';
 
   &__next,
   &__prev {
+    @include bg-contain();
     @include clickable();
     @include aspect-ratio(21, 32);
     position: absolute;
@@ -41,7 +42,6 @@ $b: '.gallery-slider';
     transition: $g-transition;
 
     @include mobile {
-      @include bg-contain();
       @include aspect-ratio(15, 25);
       width: rem(15px);
     }

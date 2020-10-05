@@ -40,8 +40,8 @@ $b: '.s-uniq';
   }
 
   &__item {
-    flex: 0 0 auto;
-    width: rem(370px);
+    flex: 1 0 auto;
+    width: 30%;
     padding-left: rem(30px);
     padding-top: rem(40px);
     margin-bottom: rem(30px);
@@ -87,7 +87,7 @@ $b: '.s-uniq';
       background-color: $white-true;
       box-shadow: rem(5px) rem(5px) rem(20px) rem(5px) rgba($black-true, 0.1);
       position: relative;
-      height: rem(320px);
+      height: 100%;
 
       @include tablet {
         height: rem(300px);
@@ -124,7 +124,7 @@ $b: '.s-uniq';
     &-text {
       padding: rem(20px);
       font-size: rem(18px);
-      transform: translateY(rem(-30px));
+      transform: translateY(rem(-10px));
       line-height: 1.5;
       transition: $g-transition;
 
